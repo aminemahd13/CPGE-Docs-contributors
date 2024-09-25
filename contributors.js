@@ -10,14 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
   
           contributorCard.innerHTML = `
             <h2>${contributor.name}</h2>
-            <p><strong>Role:</strong> ${contributor.role}</p>
+            <p><strong>School:</strong> ${contributor.school}</p>
             <p><strong>Email:</strong> <a href="mailto:${contributor.email}">${contributor.email}</a></p>
             <div class="card-footer">
               <a href="mailto:${contributor.email}">
                 <i class="icon">✉</i>
-              </a>
-              <a href="${contributor.linkedin}" target="_blank">
-                <i class="icon">💼</i>
               </a>
             </div>
           `;
