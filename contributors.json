@@ -2,11 +2,11 @@
     {
         "name": "John Doe",
         "email": "johndoe@example.com",
-        "school": "Developer"
+        "school": "CentraleSupélec"
     },
     {
         "name": "Jane Smith",
         "email": "janesmith@example.com",
-        "school": "Designer"
+        "school": "l'X"
     }
 ]
