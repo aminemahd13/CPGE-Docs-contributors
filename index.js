@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error loading contributors:', error);
         });
 });
+
+// Function to go back to the main website
+function goBack() {
+    window.location.href = "https://aminemahdane.com/";
+}
