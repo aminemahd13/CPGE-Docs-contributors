@@ -1,0 +1,28 @@
+.contributors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contributor-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contributor-card h2 {
+    margin-top: 0;
+}
+
+.contributor-card p {
+    margin: 5px 0;
+}
+
+.contributor-card a {
+    color: #007bff;
+    text-decoration: none;
+}
