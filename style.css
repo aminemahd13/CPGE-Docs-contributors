@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-  --primary-color: #64ffda; /* The green color from your site */
-  --secondary-color: #ccd6f6; /* Light slate color */
+  --primary-color: #64ffda; /* Green from your site */
+  --secondary-color: #ccd6f6; /* Light slate */
   --background-color: #0a192f; /* Navy background */
-  --card-bg: #112240; /* Dark navy for cards */
-  --text-color: #ccd6f6; /* Light slate for text */
-  --heading-color: #e6f1ff; /* Lighter text for headings */
-  --border-radius: 8px;
+  --text-color: #ccd6f6; /* Text color */
+  --heading-color: #e6f1ff; /* Headings color */
+  --table-bg: #112240; /* Table background */
+  --border-color: #233554; /* Border color */
   --transition: 0.3s ease;
-  --spacing: 16px;
 }
 
 html, body {
@@ -43,81 +42,58 @@ html, body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--heading-color);
 }
 
 .main {
-  padding: 60px 20px;
-  max-width: 1200px;
+  padding: 40px 20px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.contributors-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+.contributors-section {
+  width: 100%;
+  overflow-x: auto;
 }
 
-.contributor-card {
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-  padding: 24px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+.contributors-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--table-bg);
   color: var(--text-color);
-  position: relative;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.contributor-card:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-4px);
+.contributors-table th, .contributors-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  margin-bottom: 12px;
+.contributors-table th {
+  background-color: var(--border-color);
+  color: var(--heading-color);
+  font-weight: 600;
 }
 
-p {
-  font-size: 1rem;
+.contributors-table td {
   color: var(--text-color);
-  margin-bottom: 12px;
 }
 
-a {
+.contributors-table a {
   color: var(--primary-color);
   text-decoration: none;
-  font-weight: 500;
   transition: var(--transition);
 }
 
-a:hover {
+.contributors-table a:hover {
   text-decoration: underline;
 }
 
-.card-footer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--secondary-color);
-  padding-top: 16px;
-}
-
-.icon {
-  font-size: 24px;
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.icon:hover {
-  color: var(--heading-color);
+.contributors-table tr:hover {
+  background-color: var(--border-color);
 }
