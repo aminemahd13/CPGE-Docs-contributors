@@ -9,6 +9,7 @@
   --heading-color: #e6f1ff; /* Headings color */
   --table-bg: #112240; /* Table background */
   --border-color: #233554; /* Border color */
+  --hover-color: rgba(100, 255, 218, 0.1); /* Greenish hover color */
   --transition: 0.3s ease;
 }
 
@@ -34,11 +35,16 @@ html, body {
   font-weight: 500;
   text-decoration: none;
   font-size: 18px;
+  padding: 12px 24px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  display: inline-block;
   transition: var(--transition);
 }
 
 .back-button:hover {
-  opacity: 0.8;
+  background-color: var(--hover-color);
+  color: var(--primary-color);
 }
 
 h1 {
@@ -84,6 +90,10 @@ h1 {
   color: var(--text-color);
 }
 
+.contributors-table tr:hover {
+  background-color: var(--hover-color);
+}
+
 .contributors-table a {
   color: var(--primary-color);
   text-decoration: none;
@@ -92,8 +102,4 @@ h1 {
 
 .contributors-table a:hover {
   text-decoration: underline;
-}
-
-.contributors-table tr:hover {
-  background-color: var(--border-color);
 }
