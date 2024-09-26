@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         row.innerHTML = `
           <td>${contributor.name}</td>
-          <td>${contributor.role}</td>
+          <td>${contributor.status}</td>
           <td><a href="mailto:${contributor.email}">${contributor.email}</a></td>
-          <td><a href="${contributor.linkedin}" target="_blank">LinkedIn</a></td>
         `;
 
         contributorsContainer.appendChild(row);
