@@ -1,12 +1,12 @@
 [
     {
-        "name": "John Doe",
-        "email": "johndoe@example.com",
-        "status": "CentraleSupélec"
+        "name": "Amine Mahdane",
+        "email": "contact@aminemahdane.com",
+        "status": "student at CentraleSupélec"
     },
     {
-        "name": "Jane Smith",
-        "email": "janesmith@example.com",
-        "status": "l'X"
+        "name": "test",
+        "email": "test@janesmith@example.com",
+        "status": "test"
     }
 ]
